@@ -1,0 +1,30 @@
+#nav{
+    display: block;
+    position:fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+}
+.logo{
+    border-radius: 50%;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(242, 144, 167);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.nav-link{
+    color: rgb(242, 144, 167);
+    font-weight: 500;
+}  
+
+.navi{
+    width: 92%;
+    border-radius: 50px;
+    display: block;
+    margin-left: 4%!important;
+    margin-right: 4%!important;
+    background: rgb(99, 99, 99);
+}
