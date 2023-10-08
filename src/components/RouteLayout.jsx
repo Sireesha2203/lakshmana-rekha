@@ -4,7 +4,7 @@ import Navi from './navigationbar/Navi';
 import Footer from './footer/Footer';
 
 function RouteLayout() {
-
+  
   return (
     <div>
       <Navi/>
