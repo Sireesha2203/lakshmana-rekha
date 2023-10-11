@@ -1,0 +1,104 @@
+    .home{
+        margin-top: 5%;
+        color: white;
+    }
+    .home-main{
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+    }
+    .Homepage-img{
+        height: 60vh;
+        border-radius: 50%;
+        flex: 4;
+    }
+    .branding{
+        height: 60vh;
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */ 
+    }
+    .branding-head{
+        color: black;   
+    }
+    .branding-text{
+        color: grey;
+    }
+    .branding-empty{
+        flex:1;
+    }
+
+
+
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    
+    
+    .branch {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .branch .feature {
+        position: relative;
+        left: -100%;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: left 0.5s ease-in-out;
+    }
+    
+    .branch:hover .feature {
+        left: 0;
+    }
+    
+    .feature-icon {
+        font-size: 24px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    
+    .feature-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .feature-description {
+        font-size: 14px;
+        color: #333;
+    }
+    
+    /* Add styles for each branch */
+    .branch:nth-child(1) {
+        background-color: #e74c3c;
+    }
+    
+    .branch:nth-child(2) {
+        background-color: #2ecc71;
+    }
+    
+    .branch:nth-child(3) {
+        background-color: #f1c40f;
+    }
+    
+    .branch:nth-child(4) {
+        background-color: #3498db;
+    }
+    

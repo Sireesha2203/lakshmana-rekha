@@ -10,7 +10,6 @@
 }
 .logo-container {
     display: flex;
-    
     align-items: center;
     gap: 10px;
     color: rgb(242, 144, 167);
@@ -28,4 +27,6 @@
     margin-left: 4%!important;
     margin-right: 4%!important;
     background: rgb(99, 99, 99);
+    padding-top: 0.70%;
+    padding-bottom: 0.70% ;
 }

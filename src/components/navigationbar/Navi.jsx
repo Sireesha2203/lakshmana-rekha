@@ -7,11 +7,11 @@ import "./Navi.css";
 
 function Navi() {
   return (
-    <Navbar collapseOnSelect expand="lg"  variant="dark" sticky="top" className="navi">
+    <Navbar collapseOnSelect expand="lg"  variant="dark" sticky="top" className="navi" >
       <Container>
         <Navbar.Brand className="brand" href="/">
           <div className="logo-container">
-          <img className="logo" width="40px" height="40px" src="images/logo.jpg" alt="" />
+          <img className="logo" width="30px" height="30px" src="images/logo.jpg" alt="" />
           {/* <span className="brand-text">EMS</span> */}
           </div>
         </Navbar.Brand>
