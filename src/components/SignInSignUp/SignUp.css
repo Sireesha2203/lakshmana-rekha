@@ -1,0 +1,28 @@
+.form-check{
+    display: block;
+    margin: auto;
+}
+h2{
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(239, 77, 104);
+}
+.reg{
+    background-color: white;
+    width: 610px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgb(239, 77, 104) 2px 2px 10px;
+   
+}
+.btn{
+    background-color: rgb(239, 77, 104);
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(240, 139, 156);
+    color: white;
+}
+
+#dim{
+    height:600px;
+}
