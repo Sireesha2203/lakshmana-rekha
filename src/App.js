@@ -9,7 +9,7 @@ import Blogs from './components/knowledgeHub/Blogs'
 import Laws from './components/knowledgeHub/Laws'
 import SelfDefence from './components/selfdefence/SelfDefence'
 import AboutUs from './components/aboutus/AboutUs'
-
+import SignInSignUp from './components/SignInSignUp/SignInSignUp'
 
 
 function App() {
@@ -54,7 +54,10 @@ function App() {
             path:"/AboutUs",
             element:<AboutUs/>,
           },
-        
+          {
+            path:'/SignInSignUp',
+            element:<SignInSignUp/>,
+          },        
         ]
       }
     ]
