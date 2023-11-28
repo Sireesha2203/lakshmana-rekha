@@ -10,6 +10,7 @@ import Laws from './components/knowledgeHub/Laws'
 import SelfDefence from './components/selfdefence/SelfDefence'
 import AboutUs from './components/aboutus/AboutUs'
 import SignInSignUp from './components/SignInSignUp/SignInSignUp'
+import Safety from './components/Safety/Safety'
 
 
 function App() {
@@ -57,6 +58,10 @@ function App() {
           {
             path:'/SignInSignUp',
             element:<SignInSignUp/>,
+          },        
+          {
+            path:'/Safety',
+            element:<Safety/>,
           },        
         ]
       }
