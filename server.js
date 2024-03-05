@@ -33,7 +33,7 @@ mclient.connect('mongodb://127.0.0.1:27017/?directConnection=true&serverSelectio
     const dbObj=dbRef.db("lakshmanarekha")
     const userCollectionObj=dbObj.collection("userCollection")
     app.set("userCollectionObj",userCollectionObj)
-    console.log("Connection to Faculty-Portal DB - Success")
+    console.log("Connection to lakshmanarekha DB - Success")
 })
 .catch((err)=>console.log("Connection to Faculty-Portal DB - Failed"))
 
