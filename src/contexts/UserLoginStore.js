@@ -8,7 +8,7 @@ function UserLoginStore({children}){
     const [userLoginStatus,setUserLoginStatus]=useState(false)
     //function to make user login reuqest
     const loginUser=async(userCredObj)=>{
-        await axios.post("http://localhost:5000/user-api/user-login",userCredObj)
+        await axios.post("/user-api/user-login",userCredObj)
         .then((response)=>{
             if(response.data.message==="success"){
               setCurrentUser({ ...response.data.user });
@@ -48,7 +48,7 @@ function UserLoginStore({children}){
       
         // Token exists, send a request to verify it with the server
         try {
-          const response = await axios.post('http://localhost:5000/user-api/verify-token', null, {
+          const response = await axios.post('/user-api/verify-token', null, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -56,7 +56,7 @@ function UserLoginStore({children}){
       
           if (response.data.message === 'Token is valid') {
             // Token is valid, fetch user data
-            const userDataResponse = await axios.get('http://localhost:5000/user-api/get-user-info', {
+            const userDataResponse = await axios.get('/user-api/get-user-info', {
               headers: {
                 Authorization: `Bearer ${token}`,
               },

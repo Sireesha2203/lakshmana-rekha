@@ -37,7 +37,7 @@ function ResetPassword() {
       // Example: You may want to send an API request to change the password
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/user-api/change-password/${currentUser.username}`,
+        `/user-api/change-password/${currentUser.username}`,
         {
           oldPassword,
           newPassword,
@@ -88,7 +88,7 @@ function ResetPassword() {
   const handleForgotPassword = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/user-api/reset-password",
+        "/user-api/reset-password",
         { username }
       );
       toast.success(response.data.message);
@@ -102,7 +102,7 @@ function ResetPassword() {
   const handleVerifyOtp = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/user-api/verify-otp",
+        "/user-api/verify-otp",
         { username, otp }
       );
       toast.success(response.data.message);
@@ -116,7 +116,7 @@ function ResetPassword() {
   const handleResetPassword = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/user-api/change-password-with-otp/${currentUser.username}`,
+        `/user-api/change-password-with-otp/${currentUser.username}`,
         { newPassword }
       );
       toast.success(response.data.message);
@@ -138,7 +138,7 @@ function ResetPassword() {
       // Perform logic to retrieve the username based on other user details
       // For example, send a request to the server to get the username associated with the provided email
       const response = await axios.post(
-        "http://localhost:5000/user-api/forgot-username",
+        "/user-api/forgot-username",
         { email }
       );
       toast.success(response.data.message);
