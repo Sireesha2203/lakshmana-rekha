@@ -3,6 +3,14 @@
   margin-top: 80px; /* Adjusted top margin to match the height of your navigation bar */
 }
 
+.card-list-header{
+  background-color: black;
+  margin: auto;
+  max-width: 75%;
+  border-radius: 4rem;
+  color: white!important;
+}
+
 .card-container {
   display: flex;
   justify-content: space-around;
@@ -26,8 +34,4 @@
 
 .card:hover {
   background-color: #f0f0f0;
-}
-
-.features-heading {
-  color: black;
 }

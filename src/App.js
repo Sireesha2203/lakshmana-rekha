@@ -11,6 +11,8 @@ import SelfDefence from './components/selfdefence/SelfDefence'
 import AboutUs from './components/aboutus/AboutUs'
 import SignInSignUp from './components/SignInSignUp/SignInSignUp'
 import Safety from './components/Safety/Safety'
+import ResetPassword from './components/SignInSignUp/ResetPassword';
+import Profile from './components/Profile/Profile';
 
 
 function App() {
@@ -62,6 +64,14 @@ function App() {
           {
             path:'/Safety',
             element:<Safety/>,
+          },       
+          {
+            path:'/reset-password',
+            element:<ResetPassword/>,
+          },        
+          {
+            path:'/profile',
+            element:<Profile/>,
           },        
         ]
       }

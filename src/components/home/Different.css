@@ -1,3 +1,10 @@
 .diff{
+    margin: auto;
+    max-width: 80%;
     background: #000;
+    border-radius: 4rem;
+}
+.different{
+    margin: auto;
+    text-align: justify;
 }

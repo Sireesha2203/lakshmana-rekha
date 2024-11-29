@@ -3,9 +3,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink,Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { loginContext } from '../../contexts/loginContext';
 import "./Navi.css";
 
 function Navi() {
+  let [,,userLoginStatus,,logoutUser,,,]=useContext(loginContext);
   return (
     <Navbar collapseOnSelect expand="lg"  variant="dark" sticky="top" className="navi" >
       <Container>
@@ -39,10 +42,12 @@ function Navi() {
               <NavDropdown.Item>
                 <Link to="/KnowledgeHub/Blogs" className='nav-link text-secondary'>Blogs</Link>
               </NavDropdown.Item>
+              
             </NavDropdown>
-
-            <NavLink to="/Login" className='nav-link'>Login</NavLink>
-          
+            {!userLoginStatus?
+              <NavLink to="/SignInSignUp" className='nav-link'>Login</NavLink>:
+              <NavLink to="/SignInSignUp" onClick={logoutUser} className='nav-link'>Logout</NavLink>
+            }
           </Nav>
         </Navbar.Collapse>
         </div>
