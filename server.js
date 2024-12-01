@@ -28,7 +28,7 @@ app.use("/user-api",userApp)
 //connect to mongoclient
 const mclient=require('mongodb').MongoClient
 
-mclient.connect('mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0')
+mclient.connect('mongodb+srv://py:py@cluster0.e2biw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then((dbRef)=>{
     const dbObj=dbRef.db("lakshmanarekha")
     const userCollectionObj=dbObj.collection("userCollection")
